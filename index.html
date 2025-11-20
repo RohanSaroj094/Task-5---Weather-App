@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Weather App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🌤 Weather App</h1>
+
+    <div class="controls">
+      <input id="cityInput" type="text" placeholder="Enter city name (e.g., Mumbai)">
+      <button id="searchBtn">Search</button>
+      <button id="locBtn">📍 Use My Location</button>
+      <button id="clearBtn" class="muted">Clear</button>
+    </div>
+
+    <div id="msg" class="msg" aria-live="polite"></div>
+
+    <div id="weatherBox" class="weather-box" hidden>
+      <div class="top">
+        <div id="icon" class="icon"></div>
+        <div class="main">
+          <div id="temp" class="temp">--°C</div>
+          <div id="desc" class="desc">—</div>
+          <div id="place" class="place">—</div>
+        </div>
+      </div>
+
+      <div class="meta">
+        <div id="feels" class="meta-item"></div>
+        <div id="humidity" class="meta-item"></div>
+        <div id="wind" class="meta-item"></div>
+        <div id="sun" class="meta-item"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
